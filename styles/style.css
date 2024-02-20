@@ -1,0 +1,144 @@
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao_conteudo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;    
+}
+
+.btn-code {
+    /* background-color: lightseagreen; */
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid var(--cor-terciaria);
+    width: 45%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;    
+}
+
+.subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: var(--cor-terciaria);
+    cursor: grab;
+    transition: 0.5s;
+
+}
+
+.foto{
+    width: 45%;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    background-color: #000005;
+}
+
+.menu{
+    display: flex;
+    gap: 60px;
+}
+
+.mp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.mp:hover{
+    background-color: var(--cor-terciaria);
+    border-radius: 16px;
+    cursor: grab;
+    transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+}
